@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+:root {
+    --color-1: #19234f;
+    --color-2: #faeaeb;
+}
+
+body {
+    background-color: var(--color-2);
+    font-family: 'Josefin Sans', Tahoma, sans-serif;
+    color: var(--color-1);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+}
+
+li {
+    width: clamp(300px, 80%, 500px);
+    list-style-type: none;
+    height: 300px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+li .bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform .3s ease-in;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+
+li:hover > div,
+li:focus > div {
+    transform: scale(1.23);
+}
+
+li:hover a {
+    opacity: 100%;
+    transform: translate(0, 0);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-2);
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(8, 12, 29, 0.8) 80%);
+    opacity: 0;
+    transform: translate(0, 100%);
+    transition: all 0.4s ease-out;
+}
+
+a span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    width: 60%;
+}
+
+
+.stuffedPeppers {
+    background: url('images/stuffed-peppers.bmp')
+}
+
+.chickenEnchiladas {
+     background: url('images/chicken-enchiladas.bmp');
+}
+
+.chocolateTrufflePie {
+     background: url('images/chocolate-truffle-pie.bmp');
+}
+
+.taterTot {
+    background: url('images/tater-tot.bmp');
+}
+
+.porkChops {
+    background: url('images/pork-chops.bmp');
+}
