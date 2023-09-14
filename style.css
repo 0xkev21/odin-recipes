@@ -20,8 +20,12 @@ h1 {
     text-align: center;
 }
 
+ul {
+    padding: 0;
+}
+
 li {
-    width: clamp(300px, 80%, 500px);
+    width: clamp(300px, 70%, 700px);
     list-style-type: none;
     height: 300px;
     margin: 50px auto;
@@ -44,7 +48,8 @@ li:focus > div {
     transform: scale(1.23);
 }
 
-li:hover a {
+li:hover a,
+li:focus a {
     opacity: 100%;
     transform: translate(0, 0);
 }
