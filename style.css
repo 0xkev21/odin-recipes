@@ -37,7 +37,7 @@ li .bg {
     height: 100%;
     position: relative;
     transition: transform .3s ease-in;
-    background-color: black;
+    background-color: var(--color-1);
     background-position: center;
     background-size: cover;
     position: relative; 
